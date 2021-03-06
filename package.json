@@ -1,7 +1,7 @@
 {
-  "name": "tool-box",
+  "name": "fe-tool-box",
   "version": "1.0.0",
-  "description": "tool-box",
+  "description": "Front-end toolbox",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "sideEffects": false,
@@ -24,16 +24,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaxPeak/tool-box.git"
+    "url": "git+https://github.com/MaxPeak/fe-tool-box.git"
   },
   "keywords": [
-    "tools",
-    "utils"
+    "typescript",
+    "javascript",
+    "util",
+    "tool"
   ],
   "bugs": {
-    "url": "https://github.com/MaxPeak/tool-box/issues"
+    "url": "https://github.com/MaxPeak/fe-tool-box/issues"
   },
-  "homepage": "https://github.com/MaxPeak/tool-box",
+  "homepage": "https://github.com/MaxPeak/fe-tool-box",
   "author": "MaxPeak",
   "license": "ISC",
   "devDependencies": {
