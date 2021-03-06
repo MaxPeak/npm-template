@@ -12,7 +12,8 @@
     "build": "tsc",
     "lint": "eslint src --fix --ext .ts",
     "format": "prettier --write --parser typescript \"src/**/*.ts\"",
-    "test": "jest --config jestconfig.json"
+    "test": "jest --config jestconfig.json",
+    "dev": "yarn build && node dev.js"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
