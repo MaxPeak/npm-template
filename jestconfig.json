@@ -1,0 +1,7 @@
+{
+  "preset": "ts-jest",
+  "roots": ["test"],
+  "testRegex": "test/(.*?/)?.*test.ts$",
+  "collectCoverage": true,
+  "coverageDirectory": "./coverage/"
+}

@@ -1,1 +1,14 @@
+# OSX
+.DS_Store
+
+# npm
 node_modules
+
+# jest
+coverage
+
+# build
+/lib
+
+# log
+*.log
