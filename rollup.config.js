@@ -1,4 +1,4 @@
-import ts from 'rollup-plugin-typescript'
+import ts from 'rollup-plugin-typescript2'
 import { terser } from 'rollup-plugin-terser'
 import pkg from './package.json'
 
@@ -8,20 +8,17 @@ export default {
     {
       file: pkg.main,
       format: 'cjs',
-      sourcemap: false,
     },
     {
       file: pkg.module,
       format: 'esm',
-      sourcemap: false,
     },
     {
-      file: `lib/${pkg.name}.min.js`,
+      file: pkg.borwser,
       format: 'umd',
-      name: pkg.name,
-      sourcemap: false,
+      name: '$tools',
       plugins: [terser()],
     },
   ],
-  plugins: [ts()],
+  plugins: [ts({ tsconfig: './tsconfig.json' })],
 }
